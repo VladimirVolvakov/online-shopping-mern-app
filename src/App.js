@@ -1,9 +1,11 @@
 import React from "react";
+// Pages:
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div>
-      Online Shop
+      <Home />
     </div>
   );
 }
