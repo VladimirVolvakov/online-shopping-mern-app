@@ -2,7 +2,6 @@
 import { Container, Wrapper, Left, Center, Right, Logo, Language, SearchContainer, Input, Menu } from "./Navbar.styles";
 // Icons:
 import { BsSearch, BsCart3 } from 'react-icons/bs';
-import { MdOutlineMarkEmailUnread } from 'react-icons/md';
 
 const Navbar = () => {
   return (
