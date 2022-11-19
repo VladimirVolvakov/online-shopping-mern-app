@@ -1,4 +1,5 @@
 // Components:
+import Categories from "../components/Categories";
 import Navbar from "../components/Navbar";
 import Offer from "../components/Offer";
 import Slider from "../components/Slider";
@@ -9,6 +10,7 @@ const Home = () => {
       <Offer />
       <Navbar />
       <Slider />
+      <Categories />
     </div>
   );
 };
