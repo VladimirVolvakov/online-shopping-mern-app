@@ -79,6 +79,7 @@ export const Description = styled.p`
 export const Button = styled.button`
   padding: 15px;
   font-size: 20px;
+  font-weight: 600;
   background-color: transparent;
   border-radius: 0.5rem;
   cursor: pointer;

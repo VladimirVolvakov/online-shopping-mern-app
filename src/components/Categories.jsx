@@ -9,7 +9,7 @@ const Categories = () => {
   return (
     <section id="categories">
       <Container>
-        { categories.map(item => (<CategoryItem item={item} />)) }
+        { categories.map(item => (<CategoryItem key={item.id} item={item} />)) }
       </Container>
     </section>
   );
