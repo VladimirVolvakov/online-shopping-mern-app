@@ -8,6 +8,7 @@ export const InfoContainer = styled.div`
   width: 100%;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
   z-index: 3;
   display: flex;
   justify-content: center;
@@ -22,9 +23,10 @@ export const Container = styled.div`
   align-items: center;
   flex: 1;
   margin: 5px;
-  height: 350px;
+  height: 300px;
   min-width: 300px;
-  border: 2px solid #f5fbfd;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 0px;
 
   &:hover ${InfoContainer} {
     opacity: 1;
@@ -35,6 +37,7 @@ export const Container = styled.div`
 export const Image = styled.img`
   height: 75%;
   z-index: 2;
+  overflow: hidden;
 `;
 
 export const Icon = styled.div`
