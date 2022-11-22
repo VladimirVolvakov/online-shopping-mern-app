@@ -1,5 +1,5 @@
 // Styles:
-import { Container, LeftPart, CentralPart, RightPart, Logo, Description, SocialMediaContainer, SocialMediaIcon } from "./Footer.styles";
+import { Container, LeftPart, CentralPart, RightPart, Logo, Description, SocialMediaContainer, SocialMediaIcon, Title, LinksList, LinksListItem } from "./Footer.styles";
 // Icons:
 import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 import { BsTelegram } from "react-icons/bs";
@@ -25,12 +25,25 @@ const Footer = () => {
             <SocialMediaIcon color="55ACEE">
               <AiOutlineTwitter />
             </SocialMediaIcon>
-            <SocialMediaIcon color="E60023">
+            <SocialMediaIcon color="0088CC">
               <BsTelegram />
             </SocialMediaIcon>
           </SocialMediaContainer>
         </LeftPart>
-        <CentralPart></CentralPart>
+        <CentralPart>
+          <Title>Useful Links</Title>
+          <LinksList>
+            <LinksListItem>Home</LinksListItem>
+            <LinksListItem>Cart</LinksListItem>
+            <LinksListItem>Men Fashion</LinksListItem>
+            <LinksListItem>Order Tracking</LinksListItem>
+            <LinksListItem>Women Fashion</LinksListItem>
+            <LinksListItem>Wishlist</LinksListItem>
+            <LinksListItem>Accessories</LinksListItem>
+            <LinksListItem>Terms</LinksListItem>
+            <LinksListItem>My Account</LinksListItem>
+          </LinksList>
+        </CentralPart>
         <RightPart></RightPart>
       </Container>
     </footer>

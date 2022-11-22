@@ -13,10 +13,12 @@ export const LeftPart = styled.div`
 
 export const CentralPart = styled.div`
   flex: 1;
+  padding: 20px;
 `;
 
 export const RightPart = styled.div`
   flex: 1;
+  padding: 20px;
 `;
 
 export const Logo = styled.h2`
@@ -47,4 +49,19 @@ export const SocialMediaIcon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const Title = styled.h3`
+  margin-bottom: 20px;
+`
+
+export const LinksList = styled.ul`
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+export const LinksListItem = styled.li`
+  width: 50%;
+  margin-bottom: 10px;
 `;
