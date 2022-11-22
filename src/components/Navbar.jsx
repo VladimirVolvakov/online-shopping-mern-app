@@ -1,5 +1,5 @@
 // Styles:
-import { Container, Wrapper, Left, Center, Right, Logo, Language, SearchContainer, Input, Menu } from "./Navbar.styles";
+import { Container, Wrapper, LeftPart, CentralPart, RightPart, Logo, Language, SearchContainer, Input, Menu } from "./Navbar.styles";
 // Icons:
 import { BsSearch, BsCart3 } from 'react-icons/bs';
 
@@ -7,19 +7,19 @@ const Navbar = () => {
   return (
     <Container>
       <Wrapper>
-        <Left>
+        <LeftPart>
           <Logo>
-            VIA_OLI_VIA.
+            VIA_OLI_VIA.shop
           </Logo>
-        </Left>
-        <Center>
+        </LeftPart>
+        <CentralPart>
           <Language>EN</Language>
           <SearchContainer>
             <Input />
             <BsSearch style={{ color: 'gray', fontSize: '14px' }} />
           </SearchContainer>
-        </Center>
-        <Right>
+        </CentralPart>
+        <RightPart>
           <Menu>
             SIGN UP
           </Menu>
@@ -27,7 +27,7 @@ const Navbar = () => {
             SIGN IN
           </Menu>
           <BsCart3 />
-        </Right>
+        </RightPart>
       </Wrapper>
     </Container>
   );

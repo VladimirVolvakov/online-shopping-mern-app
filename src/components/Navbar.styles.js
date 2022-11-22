@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   align-items: center;
 `;
 
-export const Left = styled.div`
+export const LeftPart = styled.div`
   flex: 1;
 `;
 
@@ -20,7 +20,7 @@ export const Logo = styled.h1`
   text-align: center;
 `;
 
-export const Center = styled.div`
+export const CentralPart = styled.div`
   display: flex;
   align-items: center;
   flex: 1;
@@ -47,7 +47,7 @@ export const Input = styled.input`
   }
 `;
 
-export const Right = styled.div`
+export const RightPart = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;

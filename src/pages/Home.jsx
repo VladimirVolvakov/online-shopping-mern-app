@@ -1,5 +1,6 @@
 // Components:
 import Categories from "../components/Categories";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import Offer from "../components/Offer";
@@ -15,6 +16,7 @@ const Home = () => {
       <Categories />
       <Products />
       <Newsletter />
+      <Footer />
     </div>
   );
 };
