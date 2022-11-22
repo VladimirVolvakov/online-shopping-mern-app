@@ -16,16 +16,16 @@ const Footer = () => {
             Quibusdam, in odio?
           </Description>
           <SocialMediaContainer>
-            <SocialMediaIcon>
+            <SocialMediaIcon color="3B5999">
               <AiOutlineFacebook />
             </SocialMediaIcon>
-            <SocialMediaIcon>
+            <SocialMediaIcon color="E4405F">
               <AiOutlineInstagram />
             </SocialMediaIcon>
-            <SocialMediaIcon>
+            <SocialMediaIcon color="55ACEE">
               <AiOutlineTwitter />
             </SocialMediaIcon>
-            <SocialMediaIcon>
+            <SocialMediaIcon color="E60023">
               <BsTelegram />
             </SocialMediaIcon>
           </SocialMediaContainer>
