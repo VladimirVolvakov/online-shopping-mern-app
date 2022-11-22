@@ -65,3 +65,9 @@ export const LinksListItem = styled.li`
   width: 50%;
   margin-bottom: 10px;
 `;
+
+export const ContactItem = styled.div`
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+`;

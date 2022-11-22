@@ -1,8 +1,11 @@
 // Styles:
-import { Container, LeftPart, CentralPart, RightPart, Logo, Description, SocialMediaContainer, SocialMediaIcon, Title, LinksList, LinksListItem } from "./Footer.styles";
+import { Container, LeftPart, CentralPart, RightPart, Logo, Description, SocialMediaContainer, 
+  SocialMediaIcon, Title, LinksList, LinksListItem, ContactItem } from "./Footer.styles";
 // Icons:
 import { AiOutlineFacebook, AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
-import { BsTelegram } from "react-icons/bs";
+import { BsTelegram, BsTelephoneFill } from "react-icons/bs";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -44,7 +47,21 @@ const Footer = () => {
             <LinksListItem>My Account</LinksListItem>
           </LinksList>
         </CentralPart>
-        <RightPart></RightPart>
+        <RightPart>
+          <Title>Contact Us</Title>
+          <ContactItem>
+            <FaMapMarkerAlt style={{ marginRight: '8px'}} />
+            1/119 Illicha Ave., Donetsk, Ukraine, 83001
+          </ContactItem>
+          <ContactItem>
+            <BsTelephoneFill style={{ marginRight: '8px'}} />
+            +38-050-123-45-67
+          </ContactItem>
+          <ContactItem>
+            <MdEmail style={{ marginRight: '8px'}} />
+            for-contacts@viaolivia.shop
+          </ContactItem>
+        </RightPart>
       </Container>
     </footer>
   );
