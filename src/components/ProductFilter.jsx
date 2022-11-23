@@ -10,7 +10,7 @@ const ProductFilter = () => {
           <FilterText>Filter Products By Size:</FilterText>
           <Select>
             <Option disabled selected>
-              Select Size
+              Select
             </Option>
             <Option>XS</Option>
             <Option>S</Option>
