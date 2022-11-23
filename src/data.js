@@ -73,4 +73,39 @@ export const sliderItems = [
       id:8,
       img:"https://images-na.ssl-images-amazon.com/images/I/51+YcVcJjFL._AC_UL600_SR600,400_.jpg",
     },
+  ];
+
+  export const productList = [
+    {
+      id:1,
+      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
+    },
+    {
+      id:2,
+      img:"https://images-na.ssl-images-amazon.com/images/I/91PnxiON+-L._AC_UL600_SR600,400_.jpg",
+    },
+    {
+      id:3,
+      img:"https://images-na.ssl-images-amazon.com/images/I/71VoPbPnIHL._AC_UL600_SR600,400_.jpg",
+    },
+    {
+      id:4,
+      img:"https://images-na.ssl-images-amazon.com/images/I/61N9LO+XamL._AC_UL600_SR600,400_.jpg",
+    },
+    {
+      id:5,
+      img:"https://images-na.ssl-images-amazon.com/images/I/61q0Y9s6WlL._AC_UL600_SR600,400_.jpg",
+    },
+    {
+      id:6,
+      img:"https://images-na.ssl-images-amazon.com/images/I/61dSKqvRdtS._AC_UL600_SR600,400_.jpg",
+    },
+    {
+      id:7,
+      img:"https://images-na.ssl-images-amazon.com/images/I/61lx7PxgG3L._AC_UL600_SR600,400_.jpg",
+    },
+    {
+      id:8,
+      img:"https://images-na.ssl-images-amazon.com/images/I/51+YcVcJjFL._AC_UL600_SR600,400_.jpg",
+    },
   ]
