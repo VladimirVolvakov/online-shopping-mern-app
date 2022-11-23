@@ -1,11 +1,11 @@
 // Styles:
-import { Container, Title } from "./Products.styles";
+import { Container, Title } from "./FavouriteProducts.styles";
 // Component:
 import ProductItem from "./ProductItem";
 // Data:
 import { popularProducts } from "../data";
 
-const Products = () => {
+const FavouriteProducts = () => {
   return (
     <section id="products">
       <Title>FAVOURITES</Title>
@@ -16,4 +16,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default FavouriteProducts;
