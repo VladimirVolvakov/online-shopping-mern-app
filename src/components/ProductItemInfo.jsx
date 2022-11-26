@@ -1,5 +1,7 @@
 // Styles:
-import { Container, ImageContainer, Image, InfoContainer, Title, Description, Price } from "./ProductItemInfo.styles";
+import { Container, ImageContainer, Image, InfoContainer, Title, Description, 
+  Price, FilterContainer, Filter, FilterTitle, FilterColor, FilterSizeSelect,
+FilterSizeOption } from "./ProductItemInfo.styles";
 
 const ProductItemInfo = () => {
   return (
@@ -14,6 +16,25 @@ const ProductItemInfo = () => {
           eum ducimus alias cumque quia in dolor deleniti, qui quos?
         </Description>
         <Price>$14.99</Price>
+        <FilterContainer>
+          <Filter>
+            <FilterTitle>Color</FilterTitle>
+            <FilterColor color="black" />
+            <FilterColor color="gray" />
+            <FilterColor color="darkblue" />
+          </Filter>
+          <Filter>
+            <FilterTitle>Size</FilterTitle>
+            <FilterSizeSelect>
+              <FilterSizeOption>XS</FilterSizeOption>
+              <FilterSizeOption>S</FilterSizeOption>
+              <FilterSizeOption>M</FilterSizeOption>
+              <FilterSizeOption>L</FilterSizeOption>
+              <FilterSizeOption>XL</FilterSizeOption>
+              <FilterSizeOption>XXL+</FilterSizeOption>
+            </FilterSizeSelect>
+          </Filter>
+        </FilterContainer>
       </InfoContainer>
     </Container>
   );
