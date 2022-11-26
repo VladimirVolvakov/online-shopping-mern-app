@@ -1,7 +1,9 @@
 // Styles:
 import { Container, ImageContainer, Image, InfoContainer, Title, Description, 
   Price, FilterContainer, Filter, FilterTitle, FilterColor, FilterSizeSelect,
-FilterSizeOption } from "./ProductItemInfo.styles";
+FilterSizeOption, AddItemContainer, AmountContainer, Amount, Button } from "./ProductItemInfo.styles";
+// Icons:
+import { IoIosAddCircleOutline, IoIosRemoveCircleOutline } from "react-icons/io";
 
 const ProductItemInfo = () => {
   return (
@@ -35,6 +37,14 @@ const ProductItemInfo = () => {
             </FilterSizeSelect>
           </Filter>
         </FilterContainer>
+        <AddItemContainer>
+          <AmountContainer>
+            <IoIosRemoveCircleOutline size={30}/>
+            <Amount>1</Amount>
+            <IoIosAddCircleOutline size={30} />
+          </AmountContainer>
+          <Button>ADD TO CART</Button>
+        </AddItemContainer>
       </InfoContainer>
     </Container>
   );

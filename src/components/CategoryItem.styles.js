@@ -43,10 +43,10 @@ export const Button = styled.button`
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
+  transition: all 0.3s;
 
   &:hover {
     background-color: black;
     color: white;
-    transition: all 0.3s;
   }
 `;
