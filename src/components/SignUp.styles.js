@@ -69,13 +69,13 @@ export const Button = styled.button`
   font-size: 20px;
   font-weight: 500;
   background-color: transparent;
-  border: 2px solid red;
+  border: 2px solid black;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.3s;
 
   &:hover {
-    background-color: red;
+    background-color: black;
     color: white;
   }
 `;

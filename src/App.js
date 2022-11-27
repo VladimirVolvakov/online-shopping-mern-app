@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import ProductCatalog from "./pages/ProductCatalog";
 import ProductItemPage from "./pages/ProductItemPage";
 import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <Home /> */}
       {/* <ProductCatalog /> */}
       {/* <ProductItemPage /> */}
-      <Register />
+      {/* <Register /> */}
+      <Login />
     </div>
   );
 }
