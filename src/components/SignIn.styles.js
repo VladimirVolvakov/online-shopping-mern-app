@@ -79,9 +79,10 @@ export const LinksContainer = styled.div`
   display: flex;
   justify-content: center;
   gap: 2rem;
+`;
+
+export const Link = styled.a`
   font-size: 12px;
   text-decoration: underline;
   cursor: pointer;
 `;
-
-export const Link = styled.a``;

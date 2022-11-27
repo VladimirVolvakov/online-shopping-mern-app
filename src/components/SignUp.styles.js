@@ -14,7 +14,6 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   width: 40%;
-  margin: 10px auto;
   padding: 10px 20px;
   border-radius: 0.5rem;
   background-color: whitesmoke;

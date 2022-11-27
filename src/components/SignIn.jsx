@@ -19,8 +19,7 @@ const SignIn = () => {
           <LinksContainer>
             <Link>Forgot password?</Link>
             <Link>Create a new account</Link>
-          </LinksContainer>
-          
+          </LinksContainer>          
         </Form>
       </Wrapper>
     </Container>
