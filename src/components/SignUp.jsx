@@ -29,7 +29,7 @@ const SignUp = () => {
           </InputContainer>
           <InputContainer>
             <Label>Confirm Password</Label>
-            <Input placeholder="Enter your password again" />
+            <Input placeholder="Re-enter your password" />
           </InputContainer>
           <Agreement>
             By creating an account, I consent to the processing of my personal
