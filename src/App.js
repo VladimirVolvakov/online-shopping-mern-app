@@ -1,5 +1,6 @@
 import React from "react";
 // Pages:
+import Cart from "./pages/Cart";
 import Home from "./pages/Home";
 import ProductCatalog from "./pages/ProductCatalog";
 import ProductItemPage from "./pages/ProductItemPage";
@@ -13,7 +14,8 @@ function App() {
       {/* <ProductCatalog /> */}
       {/* <ProductItemPage /> */}
       {/* <Register /> */}
-      <Login />
+      {/* <Login /> */}
+      <Cart />
     </div>
   );
 }
