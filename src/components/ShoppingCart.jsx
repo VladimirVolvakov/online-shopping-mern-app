@@ -16,7 +16,7 @@ const ShoppingCart = () => {
             <TopText>Shopping Bag (2)</TopText>
             <TopText>Wishlist (0)</TopText>
           </TopTextContainer>
-          <TopButton>Checkout Now</TopButton>
+          <TopButton type="filled">Checkout Now</TopButton>
         </TopContainer>
         <BottomContainer>
           <ProductInfo>
