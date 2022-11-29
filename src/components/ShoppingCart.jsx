@@ -26,7 +26,7 @@ const ShoppingCart = () => {
                 <Details>
                   <ProductName><b>Product:</b> Essentials Women's Lightweight Water-Resistant Hooded Puffer Coat</ProductName>
                   <ProductId><b>ID:</b> 1234567890</ProductId>
-                  <ProductColor />
+                  <ProductColor color="black" />
                   <ProductSize><b>Size:</b> L</ProductSize>
                 </Details>
               </ProductDetails>
@@ -39,14 +39,14 @@ const ShoppingCart = () => {
                 <ActualPrice>$32.90</ActualPrice>
               </ProductPrice>
             </ProductCard>
-            <Hr />
+            <Hr/>
             <ProductCard>
               <ProductDetails>
                 <ProductImage src="https://images-na.ssl-images-amazon.com/images/I/81TW1gyWBJL._AC_UL600_SR600,400_.jpg" />
                 <Details>
                   <ProductName><b>Product:</b> Essentials Women's Classic-Fit Long-Sleeve Full-Zip Polar Soft Fleece Jacket</ProductName>
                   <ProductId><b>ID:</b> 2345678901</ProductId>
-                  <ProductColor />
+                  <ProductColor color="black" />
                   <ProductSize><b>Size:</b> L</ProductSize>
                 </Details>
               </ProductDetails>
@@ -59,14 +59,14 @@ const ShoppingCart = () => {
                 <ActualPrice>$16.40</ActualPrice>
               </ProductPrice>
             </ProductCard>
-            <Hr />
+            <Hr/>
             <ProductCard>
               <ProductDetails>
                 <ProductImage src="https://images-na.ssl-images-amazon.com/images/I/614VXl7BjqL._AC_UL600_SR600,400_.jpg" />
                 <Details>
                   <ProductName><b>Product:</b> AUTOMET Womens Casual Plaid Shacket Wool Blend Button Down Long Sleeve Shirt Fall Jacket Shackets</ProductName>
                   <ProductId><b>ID:</b> 3456789012</ProductId>
-                  <ProductColor />
+                  <ProductColor color="brown" />
                   <ProductSize><b>Size:</b> L</ProductSize>
                 </Details>
               </ProductDetails>
