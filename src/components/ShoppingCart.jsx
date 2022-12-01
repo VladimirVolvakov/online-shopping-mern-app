@@ -94,7 +94,7 @@ const ShoppingCart = () => {
               <SummaryItemName>Shipping Discount</SummaryItemName>
               <SummaryItemPrice>-$0.50</SummaryItemPrice>
             </SummaryItem>
-            <SummaryItem>
+            <SummaryItem type="total">
               <SummaryItemName>Total</SummaryItemName>
               <SummaryItemPrice>$83.20</SummaryItemPrice>
             </SummaryItem>

@@ -96,6 +96,10 @@ export const ProductPrice = styled.span`
 
 export const Summary = styled.div`
   flex: 1;
+  height: 43vh;
+  border: 0.5px solid lightgray;
+  border-radius: 0.5rem;
+  padding: 30px;
 `;
 
 export const ProductAmountContainer = styled.div`
@@ -121,12 +125,40 @@ export const Hr = styled.hr`
   margin: 15px;
 `;
 
-export const SummaryTitle = styled.h2``; 
+export const SummaryTitle = styled.h2`
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 20px;
+`; 
 
-export const SummaryItem = styled.div``; 
+export const SummaryItem = styled.div`
+  font-size: ${props => props.type === "total" ? "24px" : "16px"};
+  font-weight: ${props => props.type === "total" ? "600" : "300"};
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+`; 
 
 export const SummaryItemName = styled.span``; 
 
 export const SummaryItemPrice = styled.span``; 
 
-export const Button = styled.button``;
+export const Button = styled.button`
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    color: black;
+    background-color: transparent;
+    border: 2px solid black;
+  }
+`;
