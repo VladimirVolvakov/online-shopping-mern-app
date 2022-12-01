@@ -15,7 +15,7 @@ const Navbar = () => {
         <CentralPart>
           <Language>EN</Language>
           <SearchContainer>
-            <Input />
+            <Input placeholder="Search..." />
             <BsSearch style={{ color: 'gray', fontSize: '14px' }} />
           </SearchContainer>
         </CentralPart>
