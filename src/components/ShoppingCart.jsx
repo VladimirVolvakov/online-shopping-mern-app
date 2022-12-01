@@ -1,9 +1,36 @@
 // Styles:
-import { Container, Wrapper, Title, TopContainer, TopButton, TopTextContainer, TopText, BottomContainer, ProductInfo, ProductCard,
-ProductDetails, ProductImage, Details, ProductName, ProductId, ProductColor, ProductSize, ProductPrice, Summary, ProductAmountContainer,
-Amount, ActualPrice, Hr, SummaryTitle, SummaryItem, SummaryItemName, SummaryItemPrice, Button } from "./ShoppingCart.styles";
-// Icons:
-import { IoIosAddCircleOutline, IoIosRemoveCircleOutline } from "react-icons/io";
+import { Container, Wrapper, Title, TopContainer, TopButton, TopTextContainer, TopText, 
+  BottomContainer, ProductInfo, Summary, SummaryTitle, SummaryItem, SummaryItemName, 
+  SummaryItemPrice, Button } from "./ShoppingCart.styles";
+// Component:
+import ShoppingCartItem from "./ShoppingCartItem";
+
+const selectedProducts = [
+  {
+    image: "https://images-na.ssl-images-amazon.com/images/I/71vOxHi0KRL._AC_UL600_SR600,400_.jpg",
+    name: "Essentials Women's Lightweight Water-Resistant Hooded Puffer Coat",
+    id: "1234567890",
+    color: "black",
+    size: "L",
+    price: "32.90"
+  },
+  {
+    image: "https://images-na.ssl-images-amazon.com/images/I/81TW1gyWBJL._AC_UL600_SR600,400_.jpg",
+    name: "Essentials Women's Classic-Fit Long-Sleeve Full-Zip Polar Soft Fleece Jacket",
+    id: "2345678901",
+    color: "black",
+    size: "L",
+    price: "16.40"
+  },
+  {
+    image: "https://images-na.ssl-images-amazon.com/images/I/614VXl7BjqL._AC_UL600_SR600,400_.jpg",
+    name: "AUTOMET Womens Casual Plaid Shacket Wool Blend Button Down Long Sleeve Shirt Fall Jacket Shackets",
+    id: "3456789012",
+    color: "brown",
+    size: "L",
+    price: "38.98"
+  }
+];
 
 const ShoppingCart = () => {
   return (
@@ -13,78 +40,29 @@ const ShoppingCart = () => {
         <TopContainer>
           <TopButton>Continue Shopping</TopButton>
           <TopTextContainer>
-            <TopText>Shopping Bag (2)</TopText>
+            <TopText>Shopping Bag (3)</TopText>
             <TopText>Wishlist (0)</TopText>
           </TopTextContainer>
           <TopButton type="filled">Checkout Now</TopButton>
         </TopContainer>
         <BottomContainer>
           <ProductInfo>
-            <ProductCard>
-              <ProductDetails>
-                <ProductImage src="https://images-na.ssl-images-amazon.com/images/I/71vOxHi0KRL._AC_UL600_SR600,400_.jpg" />
-                <Details>
-                  <ProductName><b>Product:</b> Essentials Women's Lightweight Water-Resistant Hooded Puffer Coat</ProductName>
-                  <ProductId><b>ID:</b> 1234567890</ProductId>
-                  <ProductColor color="black" />
-                  <ProductSize><b>Size:</b> L</ProductSize>
-                </Details>
-              </ProductDetails>
-              <ProductPrice>
-                <ProductAmountContainer>
-                  <IoIosRemoveCircleOutline size={30}/>
-                  <Amount>1</Amount>
-                  <IoIosAddCircleOutline size={30} />
-                </ProductAmountContainer>
-                <ActualPrice>$32.90</ActualPrice>
-              </ProductPrice>
-            </ProductCard>
-            <Hr/>
-            <ProductCard>
-              <ProductDetails>
-                <ProductImage src="https://images-na.ssl-images-amazon.com/images/I/81TW1gyWBJL._AC_UL600_SR600,400_.jpg" />
-                <Details>
-                  <ProductName><b>Product:</b> Essentials Women's Classic-Fit Long-Sleeve Full-Zip Polar Soft Fleece Jacket</ProductName>
-                  <ProductId><b>ID:</b> 2345678901</ProductId>
-                  <ProductColor color="black" />
-                  <ProductSize><b>Size:</b> L</ProductSize>
-                </Details>
-              </ProductDetails>
-              <ProductPrice>
-                <ProductAmountContainer>
-                  <IoIosRemoveCircleOutline size={30}/>
-                  <Amount>1</Amount>
-                  <IoIosAddCircleOutline size={30} />
-                </ProductAmountContainer>
-                <ActualPrice>$16.40</ActualPrice>
-              </ProductPrice>
-            </ProductCard>
-            <Hr/>
-            <ProductCard>
-              <ProductDetails>
-                <ProductImage src="https://images-na.ssl-images-amazon.com/images/I/614VXl7BjqL._AC_UL600_SR600,400_.jpg" />
-                <Details>
-                  <ProductName><b>Product:</b> AUTOMET Womens Casual Plaid Shacket Wool Blend Button Down Long Sleeve Shirt Fall Jacket Shackets</ProductName>
-                  <ProductId><b>ID:</b> 3456789012</ProductId>
-                  <ProductColor color="brown" />
-                  <ProductSize><b>Size:</b> L</ProductSize>
-                </Details>
-              </ProductDetails>
-              <ProductPrice>
-                <ProductAmountContainer>
-                  <IoIosRemoveCircleOutline size={30}/>
-                  <Amount>1</Amount>
-                  <IoIosAddCircleOutline size={30} />
-                </ProductAmountContainer>
-                <ActualPrice>$38.98</ActualPrice>
-              </ProductPrice>
-            </ProductCard>
+            { selectedProducts.map(item => (
+              <ShoppingCartItem 
+              key={Math.round(Math.random()*1000000)}
+              imageSrc={item.image}
+              productName={item.name}
+              productId={item.id}
+              productColor={item.color}
+              productSize={item.size}
+              productPrice={item.price}
+            />)) }
           </ProductInfo>
           <Summary>
             <SummaryTitle>Order Summary</SummaryTitle>
             <SummaryItem>
               <SummaryItemName>Subtotal</SummaryItemName>
-              <SummaryItemPrice>$80.00</SummaryItemPrice>
+              <SummaryItemPrice>$88.28</SummaryItemPrice>
             </SummaryItem>
             <SummaryItem>
               <SummaryItemName>Estimated Shipping</SummaryItemName>
@@ -96,7 +74,7 @@ const ShoppingCart = () => {
             </SummaryItem>
             <SummaryItem type="total">
               <SummaryItemName>Total</SummaryItemName>
-              <SummaryItemPrice>$83.20</SummaryItemPrice>
+              <SummaryItemPrice>$91.48</SummaryItemPrice>
             </SummaryItem>
             <Button>Checkout now</Button>
           </Summary>
