@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 60px;
+
+  @media all and (max-width: 380px) {
+    
+  }
 `;
 
 export const Wrapper = styled.div`
