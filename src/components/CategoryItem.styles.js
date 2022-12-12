@@ -1,4 +1,6 @@
 import styled from "styled-components";
+// Function for media queries:
+import { mobile } from "../responsiveDesign";
 
 export const Container = styled.div`
   position: relative;
@@ -11,6 +13,10 @@ export const Image = styled.img`
   height: 100%;
   width: 100%;
   object-fit: cover;
+
+  ${mobile({
+    height: "60vh"
+  })};
 `;
 
 export const Info = styled.div`
