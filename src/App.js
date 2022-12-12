@@ -10,12 +10,12 @@ import Login from "./pages/Login";
 function App() {
   return (
     <div>
-      {/* <Home /> */}
+      <Home />
       {/* <ProductCatalog /> */}
       {/* <ProductItemPage /> */}
       {/* <Register /> */}
       {/* <Login /> */}
-      <Cart />
+      {/* <Cart /> */}
     </div>
   );
 }

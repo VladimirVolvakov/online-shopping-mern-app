@@ -1,14 +1,18 @@
 import styled from "styled-components";
+// Function for media queries:
+import { mobile } from "../responsiveDesign";
 
 export const Container = styled.div`
   height: 88vh;
   width: 100%;
   padding: 0 10px;
   display: flex;
-  // justify-content: space-between;
-  // align-items: center;
   position: relative;
   overflow: hidden;
+
+  ${mobile({
+    display: "none"
+  })};
 `;
 
 export const Arrow = styled.div`
