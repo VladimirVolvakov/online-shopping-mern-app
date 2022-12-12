@@ -1,4 +1,6 @@
 import styled from "styled-components";
+// Function for media queries:
+import { mobile } from "../responsiveDesign";
 
 export const Container = styled.div`
   height: 30px;
@@ -10,4 +12,8 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ${mobile({
+    fontSize: "10px"
+  })}
 `;
