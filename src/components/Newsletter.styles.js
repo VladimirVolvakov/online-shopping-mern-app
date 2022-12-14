@@ -1,4 +1,6 @@
 import styled from "styled-components";
+// Function for media queries:
+import { mobile } from "../responsiveDesign";
 
 export const Container = styled.div`
   height: 50vh;
@@ -8,17 +10,31 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  ${mobile({
+    height: "350px"
+  })};
 `;
 
 export const Title = styled.h2`
   font-size: 70px;
   margin-bottom: 20px;
+
+  ${mobile({
+    fontSize: "32px"
+  })};
 `; 
 
 export const Description = styled.div`
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 40px;
+
+  ${mobile({
+    textAlign: "center",
+    fontSize: "20px",
+    marginBottom: "20px"
+  })};
 `; 
 
 export const InputContainer = styled.div`
@@ -31,6 +47,13 @@ export const InputContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  ${mobile({
+    height: "auto",
+    width: "90%",
+    flexDirection: "column",
+    flexWrap: "nowrap"
+  })};
 `; 
 
 export const EmailInput = styled.input`
@@ -43,6 +66,12 @@ export const EmailInput = styled.input`
   &:focus {
     outline: none;
   }
+
+  ${mobile({
+    width: "100%",
+    fontSize: "20px",
+    borderRadius: "0.5rem",
+  })};
 `;
 
 export const Button = styled.button`
@@ -56,4 +85,10 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   flex: 3;
+
+  ${mobile({
+    width: "100%",
+    fontSize: "20px",
+    borderRadius: "0 0 0.5rem 0.5rem"
+  })};
 `;
