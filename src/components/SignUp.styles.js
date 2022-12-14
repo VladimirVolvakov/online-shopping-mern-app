@@ -1,4 +1,6 @@
 import styled from "styled-components";
+// Function for media queries:
+import { mobile } from "../responsiveDesign";
 
 export const Container = styled.div`
   width: 100vw;
@@ -10,6 +12,10 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ${mobile({
+    height: "100vh"
+  })};
 `;
 
 export const Wrapper = styled.div`
@@ -17,6 +23,10 @@ export const Wrapper = styled.div`
   padding: 10px 20px;
   border-radius: 0.5rem;
   background-color: whitesmoke;
+
+  ${mobile({
+    width: "80%"
+  })};
 `;
 
 export const Title = styled.h2`

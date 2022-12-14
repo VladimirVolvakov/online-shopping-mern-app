@@ -13,8 +13,8 @@ function App() {
       {/* <Home /> */}
       {/* <ProductCatalog /> */}
       {/* <ProductItemPage /> */}
-      {/* <Register /> */}
-      <Login />
+      <Register />
+      {/* <Login /> */}
       {/* <Cart /> */}
     </div>
   );
