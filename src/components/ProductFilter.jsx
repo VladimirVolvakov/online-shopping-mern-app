@@ -20,7 +20,7 @@ const ProductFilter = () => {
           </Select>
         </Filter>
         <Filter>
-          <FilterText>Sort</FilterText>
+          <FilterText>Sort:</FilterText>
           <Select>
             <Option selected disabled>
               Price
