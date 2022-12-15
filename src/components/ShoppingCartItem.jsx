@@ -30,7 +30,7 @@ const ShoppingCartItem = ({ imageSrc, productName, productId, productColor, prod
             <Amount>1</Amount>
             <IoIosAddCircleOutline size={30} />
           </ProductAmountContainer>
-          <ActualPrice>{productPrice}</ActualPrice>
+          <ActualPrice>${productPrice}</ActualPrice>
         </ProductPrice>
       </ProductCard>
       <Hr />
