@@ -1,9 +1,15 @@
 import styled from "styled-components";
+// Function for media queries:
+import { mobile } from "../responsiveDesign";
 
 export const Container = styled.div``;
 
 export const Wrapper = styled.div`
   padding: 20px;
+
+  ${mobile({
+    padding: "10px"
+  })};
 `; 
 
 export const Title = styled.h2`
@@ -35,7 +41,11 @@ export const TopButton = styled.button`
   }
 `; 
 
-export const TopTextContainer = styled.div``; 
+export const TopTextContainer = styled.div`
+  ${mobile({
+    display: "none"
+  })};
+`; 
 
 export const TopText = styled.span`
   text-decoration: underline;
@@ -46,6 +56,10 @@ export const TopText = styled.span`
 export const BottomContainer = styled.div`
   display: flex;
   justify-content: space-between;
+
+  ${mobile({
+    flexDirection: "column"
+  })};
 `;
 
 export const ProductInfo = styled.div`

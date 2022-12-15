@@ -12,10 +12,10 @@ function App() {
     <div>
       {/* <Home /> */}
       {/* <ProductCatalog /> */}
-      <ProductItemPage />
+      {/* <ProductItemPage /> */}
       {/* <Register /> */}
       {/* <Login /> */}
-      {/* <Cart /> */}
+      <Cart />
     </div>
   );
 }
